@@ -477,3 +477,34 @@ footer {
   font-size: 2em;
   padding-bottom: 1em;
 }
+
+@media screen and (min-width: 500px) {
+  .container > nav:first-child {
+    align-items: unset;
+  }
+
+  .nav-links > p, .nav-links > a > p {
+    width: 10vw;
+    font-size: .5em;
+    border-bottom: none;
+    font-size: 1.1em;
+  }
+
+  .nav-links > p:first-child, .nav-links > a > p {
+    border-top: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container img.nav-links.logo {
+    height: 3em;
+  }
+
+  a.logo-link {
+    display: flex;
+    justify-content: center;
+  }
+}
