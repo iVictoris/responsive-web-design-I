@@ -407,10 +407,12 @@ body, .container, .container > nav:first-child {
   display: flex;
   justify-content: center;
 }
+.main-header, main {
+  width: 95%;
+}
 
 .main-header {
   border-bottom: 3px solid #000;
-  width: 95%;
   margin: 5em auto;
 }
 
@@ -440,3 +442,15 @@ body, .container, .container > nav:first-child {
   display: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  font-size: 2.5em;
+}
+
+.content > header {
+
+}
