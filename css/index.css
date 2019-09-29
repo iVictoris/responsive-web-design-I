@@ -353,138 +353,141 @@ template {
 
 /* ! End normalizer.css */
 
-* {
-  margin: 0;
+@media only screen and (min-device-width: 0px) {
+
+  * {
+    margin: 0;
+  }
+  
+  body {
+    background: black;
+    justify-content: center;
+    width: 100vw;
+    font-family: "Titillium Web", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+  }
+  
+  body,
+  .container,
+  .container > nav:first-child,
+  main {
+    display: flex;
+  }
+  
+  .container,
+  main {
+    flex-direction: column;
+  }
+  
+  .container {
+    background: white;
+    width: 100%;
+  }
+  
+  .container > nav:first-child {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .container img.nav-links.logo {
+    height: 6em;
+    padding: 2em 0;
+  }
+  
+  .nav-links > a {
+    text-decoration: none;
+  }
+  
+  .nav-links > p:first-child,
+  .nav-links > a > p {
+    border-top: 1px solid #000;
+  }
+  
+  .nav-links > p,
+  .nav-links > a > p {
+    padding: 1em 0;
+    font-size: 2.5em;
+    color: #c0b9b3;
+    border-bottom: 1px solid #000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .main-header {
+    width: 95%;
+  }
+  
+  .main-header {
+    border-bottom: 3px solid #000;
+    margin: 6em auto;
+  }
+  
+  .main-header section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main-header h1 {
+    font-family: "Bangers", "Titillium Web";
+    font-size: 8em;
+    text-transform: uppercase;
+    width: 45%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .main-header p {
+    font-size: 2em;
+    padding: 0.25em 2em;
+    border: 1px solid #000;
+    margin: 1em 0 5em 0;
+  }
+  
+  .main-header img {
+    display: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    font-size: 2em;
+    width: 95%;
+    margin-bottom: 2em;
+  }
+  
+  .content > p {
+    margin-top: 1em;
+  }
+  
+  .content > header {
+    font-weight: bolder;
+    font-family: "Bangers", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-information {
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    justify-content: space-evenly;
+    width: 35%;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
 }
 
-body {
-  background: black;
-  justify-content: center;
-  width: 100vw;
-  font-family: "Titillium Web", "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-}
-
-body,
-.container,
-.container > nav:first-child,
-main {
-  display: flex;
-}
-
-.container,
-main {
-  flex-flow: column;
-}
-
-.container {
-  background: white;
-  width: 100%;
-}
-
-.container > nav:first-child {
-  flex-flow: column-reverse;
-  align-items: center;
-}
-
-.container img.nav-links.logo {
-  height: 6em;
-  padding: 2em 0;
-}
-
-.nav-links > a {
-  text-decoration: none;
-}
-
-.nav-links > p:first-child,
-.nav-links > a > p {
-  border-top: 1px solid #000;
-}
-
-.nav-links > p,
-.nav-links > a > p {
-  padding: 1em 0;
-  font-size: 2.5em;
-  color: #c0b9b3;
-  border-bottom: 1px solid #000;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-.main-header {
-  width: 95%;
-}
-
-.main-header {
-  border-bottom: 3px solid #000;
-  margin: 6em auto;
-}
-
-.main-header section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.main-header h1 {
-  font-family: "Bangers", "Titillium Web";
-  font-size: 8em;
-  text-transform: uppercase;
-  width: 45%;
-  text-align: center;
-  margin: 0;
-}
-
-.main-header p {
-  font-size: 2em;
-  padding: 0.25em 2em;
-  border: 1px solid #000;
-  margin: 1em 0 5em 0;
-}
-
-.main-header img {
-  display: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content {
-  font-size: 2em;
-  width: 95%;
-  margin-bottom: 2em;
-}
-
-.content > p {
-  margin-top: 1em;
-}
-
-.content > header {
-  font-weight: bolder;
-  font-family: "Bangers", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-bottom: 0.5em;
-}
-
-.contact-information {
-  display: flex;
-  flex-direction: column;
-  height: 8em;
-  justify-content: space-evenly;
-  width: 35%;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-@media screen and (min-width: 500px) {
+@media only screen  and (min-device-width: 500px )  {
   body {
     width: 95%;
     background: white;
@@ -583,7 +586,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-device-width: 1024px) {
   .container > nav:first-child {
     flex-flow: row;
     justify-content: space-between;
@@ -656,35 +659,44 @@ footer {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media only screen and (min-device-width: 1025px) {
   body {
     background: black;
   }
 
   .container {
-    max-width: 95%;
+    max-width: 98%;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media only screen and (min-device-width: 1065px) {
+  .container {
+    max-width: 95%;
+  }
+  .main-header h1 {
+    width: 50%;
+}
+}
+
+@media only screen and (min-device-width: 1200px) {
   .container {
     max-width: 85%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-device-width: 1300px) {
   .container {
     max-width: 75%;
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media only screen and (min-device-width: 1400px) {
   .container {
     max-width: 65%;
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media only screen and (min-device-width: 1441px) {
   body {
     display: none;
   }
