@@ -597,4 +597,25 @@ footer {
   .container img.nav-links.logo {
     padding: 1em 0;
 }
+.main-header h1 {
+  font-size: 5em;
+  width: 61%;
+}
+
+.main-header img {
+  display: initial;
+  margin-bottom: 4em;
+}
+.main-header {
+  border-bottom: 2.5px solid #000;
+  margin: 3em auto;
+  display: flex;
+}
+.main-header p {
+  font-size: 1em;
+  padding: 0.45em 3.25em;
+}
+.main-header section {
+  padding-top: 2em;
+}
 }
