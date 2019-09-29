@@ -566,7 +566,7 @@ footer {
   .content:nth-child(1),
   .content:nth-child(2) {
     width: 48%;
-    letter-spacing: -.35px;
+    letter-spacing: -0.35px;
   }
 
   .content:nth-child(4),
@@ -592,30 +592,30 @@ footer {
   .container > nav > .nav-links {
     padding-top: 1em;
     width: 70%;
-}
+  }
 
   .container img.nav-links.logo {
     padding: 1em 0;
-}
-.main-header h1 {
-  font-size: 5em;
-  width: 61%;
-}
+  }
+  .main-header h1 {
+    font-size: 5em;
+    width: 61%;
+  }
 
-.main-header img {
-  display: initial;
-  margin-bottom: 4em;
-}
-.main-header {
-  border-bottom: 2.5px solid #000;
-  margin: 3em auto;
-  display: flex;
-}
-.main-header p {
-  font-size: 1em;
-  padding: 0.45em 3.25em;
-}
-.main-header section {
-  padding-top: 2em;
-}
+  .main-header img {
+    display: initial;
+    margin-bottom: 4em;
+  }
+  .main-header {
+    border-bottom: 2.5px solid #000;
+    margin: 3em auto;
+    display: flex;
+  }
+  .main-header p {
+    font-size: 1em;
+    padding: 0.45em 3.25em;
+  }
+  .main-header section {
+    padding-top: 2em;
+  }
 }
