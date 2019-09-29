@@ -494,9 +494,14 @@ footer {
   body > * {
     width: 100%;
   }
-  
+
   .container > nav:first-child {
     align-items: unset;
+    width: 100%;
+  }
+
+  .container {
+    align-items: center;
   }
 
   .nav-links > p,
@@ -530,7 +535,7 @@ footer {
     font-size: 6em;
     width: 44%;
     line-height: 0.95em;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
   }
 
   .main-header p {
@@ -541,5 +546,39 @@ footer {
   .main-header {
     border-bottom: 2.5px solid #000;
     margin: 4em auto;
+  }
+
+  main {
+    flex-flow: row wrap;
+    width: 95%;
+  }
+
+  .content {
+    font-size: 1.25em;
+    width: 48%;
+    padding-left: 0.5em;
+  }
+
+  .image-control.content {
+    width: 100%;
+  }
+
+  .content:nth-child(1),
+  .content:nth-child(2) {
+    width: 48%;
+    letter-spacing: -.35px;
+  }
+
+  .content:nth-child(4),
+  .content:nth-child(5),
+  .content:nth-child(6) {
+    width: 32%;
+    letter-spacing: 0.75px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 2.5em;
+  }
+
+  footer {
+    font-size: 1.25em;
   }
 }
