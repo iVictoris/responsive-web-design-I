@@ -582,3 +582,7 @@ footer {
     font-size: 1.25em;
   }
 }
+
+@media screen and (min-width: 1045px) {
+  
+}
