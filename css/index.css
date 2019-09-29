@@ -650,4 +650,8 @@ footer {
     width: 48%;
     padding-left: 0;
   }
+
+  footer {
+    font-size: 1em;
+  }
 }
