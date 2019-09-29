@@ -584,5 +584,17 @@ footer {
 }
 
 @media screen and (min-width: 1045px) {
-  
+  .container > nav:first-child {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .container > nav > .nav-links {
+    padding-top: 1em;
+    width: 70%;
+}
+
+  .container img.nav-links.logo {
+    padding: 1em 0;
+}
 }
