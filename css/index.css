@@ -711,3 +711,363 @@ template {
     align-items: center;
   }
 }
+
+@media only screen and (min-device-width: 0px) {
+
+  * {
+    margin: 0;
+  }
+  
+  body {
+    background: black;
+    justify-content: center;
+    width: 100vw;
+    font-family: "Titillium Web", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+  }
+  
+  body,
+  .container,
+  .container > nav:first-child,
+  main {
+    display: flex;
+  }
+  
+  .container,
+  main {
+    flex-direction: column;
+  }
+  
+  .container {
+    background: white;
+    width: 100%;
+  }
+  
+  .container > nav:first-child {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .container img.nav-links.logo {
+    height: 6em;
+    padding: 2em 0;
+  }
+  
+  .nav-links > a {
+    text-decoration: none;
+  }
+  
+  .nav-links > p:first-child,
+  .nav-links > a > p {
+    border-top: 1px solid #000;
+  }
+  
+  .nav-links > p,
+  .nav-links > a > p {
+    padding: 1em 0;
+    font-size: 2.5em;
+    color: #c0b9b3;
+    border-bottom: 1px solid #000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .main-header {
+    width: 95%;
+  }
+  
+  .main-header {
+    border-bottom: 3px solid #000;
+    margin: 6em auto;
+  }
+  
+  .main-header section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main-header h1 {
+    font-family: "Bangers", "Titillium Web";
+    font-size: 8em;
+    text-transform: uppercase;
+    width: 45%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .main-header p {
+    font-size: 2em;
+    padding: 0.25em 2em;
+    border: 1px solid #000;
+    margin: 1em 0 5em 0;
+  }
+  
+  .main-header img {
+    display: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    font-size: 2em;
+    width: 95%;
+    margin-bottom: 2em;
+  }
+  
+  .content > p {
+    margin-top: 1em;
+  }
+  
+  .content > header {
+    font-weight: bolder;
+    font-family: "Bangers", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-information {
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    justify-content: space-evenly;
+    width: 35%;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen  and (min-device-width: 500px )  {
+  body {
+    width: 95%;
+    background: white;
+    margin: 0 auto;
+  }
+
+  body > * {
+    width: 100%;
+  }
+
+  .container > nav:first-child {
+    align-items: unset;
+    width: 100%;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .nav-links > p,
+  .nav-links > a > p {
+    width: 10vw;
+    font-size: 0.5em;
+    border-bottom: none;
+    font-size: 1.1em;
+  }
+
+  .nav-links > p:first-child,
+  .nav-links > a > p {
+    border-top: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container img.nav-links.logo {
+    height: 3em;
+  }
+
+  a.logo-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-header h1 {
+    font-size: 6em;
+    width: 44%;
+    line-height: 0.95em;
+    letter-spacing: 0.05em;
+  }
+
+  .main-header p {
+    font-size: 1.5em;
+    padding: 0.25em 2.25em;
+  }
+
+  .main-header {
+    border-bottom: 2.5px solid #000;
+    margin: 4em auto;
+  }
+
+  main {
+    flex-flow: row wrap;
+    width: 95%;
+  }
+
+  .content {
+    font-size: 1.25em;
+    width: 48%;
+    padding-left: 0.5em;
+  }
+
+  .image-control.content {
+    width: 100%;
+  }
+
+  .content:nth-child(1),
+  .content:nth-child(2) {
+    width: 48%;
+    letter-spacing: -0.35px;
+  }
+
+  .content:nth-child(4),
+  .content:nth-child(5),
+  .content:nth-child(6) {
+    width: 32%;
+    letter-spacing: 0.75px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 2.5em;
+  }
+
+  footer {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container > nav:first-child {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .container > nav > .nav-links {
+    padding-top: 1em;
+    width: 70%;
+  }
+
+  .container img.nav-links.logo {
+    padding: 1em 0;
+  }
+  .main-header h1 {
+    font-size: 5em;
+    width: 61%;
+  }
+
+  .main-header img {
+    display: initial;
+    margin-bottom: 4em;
+  }
+  .main-header {
+    border-bottom: 2.5px solid #000;
+    margin: 3em auto;
+    display: flex;
+  }
+  .main-header p {
+    font-size: 1em;
+    padding: 0.45em 3.25em;
+  }
+  .main-header section {
+    padding-top: 2em;
+  }
+
+  .content:nth-child(1),
+  .content:nth-child(2) {
+    width: 49%;
+    font-size: 1em;
+    letter-spacing: 0px;
+  }
+
+  .content:nth-child(2) {
+    padding-left: 0em;
+  }
+  .image-control > img {
+    width: 95%;
+  }
+
+  .content:nth-child(4),
+  .content:nth-child(5),
+  .content:nth-child(6) {
+    width: 30%;
+    padding-right: 2.1em;
+    font-size: 1em;
+  }
+
+  .content:nth-child(6) {
+    padding-right: 0;
+  }
+
+  .content {
+    font-size: 1em;
+    width: 48%;
+    padding-left: 0;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    background: black;
+  }
+
+  .container {
+    max-width: 98%;
+  }
+}
+
+@media only screen and (min-width: 1065px) {
+  .container {
+    max-width: 95%;
+  }
+  .main-header h1 {
+    width: 50%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  body {
+    display: none;
+  }
+
+  html::after {
+    content: "I don't like the fact that you went above 1440px, please go back :)";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 10em;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
