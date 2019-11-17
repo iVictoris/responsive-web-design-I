@@ -928,3 +928,73 @@ template {
   }
 
 }
+
+
+@media only screen and (min-width: 800px) {
+  nav {
+    flex-flow: row;
+  }
+
+  nav a {
+    width: 25%;
+  }
+
+  nav a.logo-link img {
+    width: 75%;
+  }
+
+  .nav-links {
+    flex-flow: row;
+    width: 75%;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .main-header section{
+    padding-top: 3rem;
+  }
+
+  .main-header img {
+    display: block;
+    width: 40%;
+  }
+
+  .main-header h1 {
+    width: 25%;
+  }
+
+  .main-header p {
+    width: 30%;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #000;
+    margin: 0 auto 0 15rem;
+  }
+
+
+  .top .content,
+  .bottom .content {
+    font-size: 1.25rem;
+  }
+
+  .middle img {
+    width: 98%;
+  }
+
+  aside {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+  }
+
+  footer {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+}
