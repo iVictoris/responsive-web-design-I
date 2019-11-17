@@ -711,8 +711,6 @@ template {
     align-items: center;
   }
 } */
-
-@media screen and (min-width: 0px) {
   *:before,
   *,
   *:after {
@@ -847,7 +845,6 @@ template {
     justify-content: center;
     padding-bottom: 1rem;
   }
-}
 
 @media only screen and (min-width: 500px) {
 
