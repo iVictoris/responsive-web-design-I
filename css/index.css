@@ -712,7 +712,7 @@ template {
   }
 } */
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 0px) {
   *:before,
   *,
   *:after {
@@ -740,7 +740,7 @@ template {
   }
 
   nav > a {
-    border-bottom: 1px solid gray  ;
+    border-bottom: 1px solid gray;
     width: 100%;
   }
 
@@ -748,12 +748,12 @@ template {
     display: block;
     width: 50%;
     padding: 1.5rem;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   a {
     text-decoration: none;
-    color: lightgray ;
+    color: lightgray;
   }
 
   .container {
@@ -788,7 +788,7 @@ template {
   }
 
   .main-header h1 {
-    font-family: 'Bangers';
+    font-family: "Bangers";
     font-size: 5rem;
     width: 45%;
     text-align: center;
@@ -799,7 +799,7 @@ template {
   .main-header p {
     width: 25%;
     text-align: center;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border: 1px solid #000;
     margin: 0 auto;
   }
@@ -811,20 +811,21 @@ template {
     margin-bottom: 2rem;
   }
 
-  main .top, main .bottom{
+  main .top,
+  main .bottom {
     display: flex;
     flex-flow: column;
   }
 
-  .top .content, .bottom .content {
+  .top .content,
+  .bottom .content {
     padding: 1rem;
     font-size: 1.1rem;
   }
 
   .content header {
-    font-family: 'Bangers';
+    font-family: "Bangers";
     margin-bottom: 1rem;
-
   }
 
   .image-control {
@@ -845,6 +846,85 @@ template {
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+  nav {
+    font-size: 1rem;
+  }
+
+  nav > a.logo-link > img {
+    width: 25%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  .container {
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+  }
+
+  nav > a {
+    border-bottom: none;
+  }
+
+  .nav-links {
+    flex-flow: row;
+  }
+
+  .nav-links > a,
+  .nav-links > p {
+    border-bottom: none;
+  }
+
+  .main-header h1 {
+    width: 25%;
+  }
+
+  .main-header p {
+    width: 20%;
+  }
+
+  main {
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+  }
+
+  main .top,
+  main .bottom {
+    flex-flow: row;
+  }
+
+  .top .content {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .middle {
+    margin-bottom: 1rem;
+  }
+
+  .middle img {
+    width: 100%;
+  }
+
+  aside .contact {
+    width: 25%;
+  }
+
+  aside .contact-information p {
+    margin-bottom: 1rem;
   }
 
 }
