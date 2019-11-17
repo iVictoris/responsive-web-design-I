@@ -947,20 +947,22 @@ template {
 
   .main-header {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
   }
 
   .main-header section{
     padding-top: 3rem;
+    width: 45%;
   }
 
   .main-header img {
     display: block;
-    width: 40%;
+    width: 33%;
   }
 
   .main-header h1 {
     width: 25%;
+    text-indent: -3rem;
   }
 
   .main-header p {
